@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal Ashraf Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #007acc;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #005fa3;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 2rem;
+            color: #007acc;
+            text-align: center;
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .about p {
+            max-width: 800px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Cards Section */
+        .card-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #007acc;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007acc;
+            color: #fff;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav style="background-color: #007acc; padding: 10px 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="#about" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 1.2rem;">About</a>
+            <a href="#experience" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 1.2rem;">Experience</a>
+            <a href="#education" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 1.2rem;">Education</a>
+            <a href="#certifications" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 1.2rem;">Certifications</a>
+            <a href="#projects" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 1.2rem;">Projects</a>
+            <a href="#achievements" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 1.2rem;">Achievements</a>
+            <a href="#footer" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 1.2rem;">Contact</a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="profile-pic">
+            <img src="image.jpeg" alt="Komal Ashraf" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; border: 5px solid white;">
+        </div>
+        <h1 style="color: #000000; font-size: 3rem;  margin-bottom: 10px;">Komal Ashraf</h1>
+        <p style="font-size: 1.5rem; font-weight: 500; color: #000000; ">
+            Data Scientist | AI Enthusiast | Machine Learning  | LLM 
+        </p>
+        <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Data Scientist with expertise in Large Language Models (LLMs), Generative AI, and cutting-edge machine learning solutions. 
+            Passionate about creating innovative tools to enhance automation, improve user experiences, and drive efficiency, 
+            I thrive on solving complex challenges and delivering impactful results.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="card-section">
+            <div class="card">
+                <h3>Data Scientist</h3>
+                <p><strong>plano solutions gmbh (2023 - Present)</strong></p>
+                <p> Developed an advanced AI-powered chatbot leveraging Large Language Models (LLMs) to automate key business processes, including document retrieval, employee data management, and scheduling, significantly improving operational efficiency. Designed and deployed a user-friendly web interface with real-time streaming responses, enabling seamless and intuitive user interactions. Streamlined data access and workflows by integrating Retrieval-Augmented Generation (RAG) with embeddings and optimizing REST API-based processes to simplify complex manual tasks. Utilized cutting-edge technologies, including Hugging Face, LangChain, ChromaDB, and Azure OpenAI, to deliver innovative and scalable AI-driven solutions tailored to organizational needs.</p>
+            </div>
+            <div class="card">
+                <h3>Data Analyst</h3>
+                <p><strong>Hashlogics (2019 - 2021)</strong></p>
+                <p>Designed and developed interactive dashboards to visualize complex datasets, empowering stakeholders with actionable insights to drive informed, data-driven decision-making across the organization. Conducted comprehensive data analysis to identify key trends, patterns, and performance metrics, uncovering opportunities to enhance operational efficiency and optimize processes. Applied advanced analytics and statistical techniques to deliver meaningful insights, enabling effective strategic planning and targeted process improvements. Leveraged a range of data visualization tools and technologies to create user-centric, impactful dashboards tailored to the needs of diverse stakeholders, ensuring alignment with organizational objectives and driving measurable business outcomes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="card-section">
+            <div class="card">
+                <h3>Master's in Research in Computer and Systems Engineering</h3>
+                <p>Technische Universität Ilmenau, Germany</p>
+                <p>Focused on machine learning, large language models, and AI research, including a hands-on internship and research project.</p>
+            </div>
+            <div class="card">
+                <h3>Semester Exchange Program</h3>
+                <p>University of Southern Indiana, USA</p>
+                <p>Learned cross-cultural communication and adopted new perspectives through immersive academic and volunteer experiences.</p>
+            </div>
+            <div class="card">
+                <h3>Bachelor's in Software Engineering</h3>
+                <p>University of Gujrat, Pakistan</p>
+                <p>Graduated with distinction, achieving a perfect GPA in the first semester and delivering an award-winning final-year project.</p>
+            </div>
+        </div>
+    </section>
+    
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card-section">
+        <div class="card">
+            <h3>Code Generator Chatbot</h3>
+            <p>
+        A smart AI chatbot that generates code based on user input, making coding faster, easier, and more efficient. It supports multiple programming languages, including Python, R, HTML, CSS, and JavaScript, making it versatile for various development needs. The chatbot assists with writing accurate code, correcting errors, and improving the overall quality of the generated code. By saving time and reducing manual effort, it simplifies the coding process, enabling users to achieve their goals more effectively.</p>
+        </div>
+        <div class="card">
+            <h3>Smart AI Document Assistant</h3>
+           <p>
+                Created a AI assistant where users can upload documents in various formats such as PDF, text, JSON, CSV, and Excel. The chatbot processes these documents to provide features like summarization, extracting important information, and document reading. Designed to save time and enhance productivity, it leverages advanced AI algorithms to analyze and process data while offering user-friendly interaction efficiently.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Energy Theft Detection Using Machine Learning</h3>
+               <p>
+        Implemented various machine learning models to detect energy theft effectively, employing machine learning models to identify anomalies in energy consumption patterns. Additionally, utilized Explainable AI to provide insights into the model's decision-making process, ensuring transparency and interpretability of the results. This project highlights the importance of combining predictive modeling with explainability for real-world applications.
+    </p>
+        </div>
+        <div class="card">
+            <h3>YouTube User Perceptions of Fashion Brand Sustainability</h3>
+            <p>
+        Perform semantic and engagement analysis on YouTube to evaluate consumer perceptions of brand sustainability and determine which brand is perceived as more sustainable. The project involved preprocessing text data, conducting sentiment analysis to extract valuable insights. This analysis provided a deeper understanding of brand reputation and highlighted consumer opinions on sustainability, offering actionable insights for strategic decision-making. </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Certifications Section -->
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="card-section">
+        <div class="card">
+            <h3>Machine Learning Specialization</h3>
+            <p>Coursera</p>
+            <p>Comprehensive training in supervised and unsupervised learning, neural networks, and data-driven solutions.</p>
+        </div>
+        <div class="card">
+            <h3>IBM Data Analyst Specialization</h3>
+            <p>Coursera</p>
+            <p>Advanced training in data wrangling, analysis, visualization, and creating automated reporting dashboards.</p>
+        </div>
+        <div class="card">
+            <h3>Cloud Computing Basics (Cloud 101)</h3>
+            <p>Coursera</p>
+            <p>Fundamental concepts of cloud services, deployment models, and virtual environments.</p>
+        </div>
+        <div class="card">
+            <h3>Certificate of Achievement</h3>
+            <p>University of Southern Indiana</p>
+            <p>Awarded for successfully completing the semester exchange program with academic and cultural distinction.</p>
+        </div>
+        <div class="card">
+            <h3>Volunteer Certificate of Appreciation</h3>
+            <p>University of Southern Indiana</p>
+            <p>Recognized for active participation in volunteer initiatives during the semester exchange program.</p>
+        </div>
+        <div class="card">
+            <h3>Global UGRAD Exchange Program Certificate</h3>
+            <p>U.S. Department of State</p>
+            <p>Certificate awarded for participating in the Global Undergraduate Exchange Program.</p>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Achievements & Honors Section -->
+<section id="achievements" class="achievements">
+    <h2>Achievements & Honors</h2>
+    <div class="card-section">
+        <div class="card">
+            <h3>Cultural Ambassador of Pakistan</h3>
+            <p>Represented Pakistan as a Cultural Ambassador under the U.S. Department of State's Global Undergraduate Exchange Program. Promoted cross-cultural understanding through interactive sessions, workshops, and community-building initiatives while sharing Pakistan’s rich cultural heritage with peers from diverse nationalities.</p>
+        </div>
+        <div class="card">
+            <h3>Women’s Global Leadership Retreat Representative</h3>
+            <p>First woman to represent Pakistan at Indiana’s Fifth Annual Women’s Global Leadership Retreat in New Harmony, Indiana. Presented on topics such as work-life balance and encouraging women to champion women’s causes.</p>
+        </div>
+        <div class="card">
+            <h3>Global UGRAD Exchange Program</h3>
+            <p>First candidate from my hometown selected for the prestigious Global Undergraduate Exchange Program, supported by the U.S. Department of State.</p>
+        </div>
+        <div class="card">
+            <h3>A+ in Final Year Project</h3>
+            <p>Recognized for exceptional performance and awarded an A+ in the final year project of the Bachelor's degree by the University of Gujrat.</p>
+        </div>
+        <div class="card">
+            <h3>Academic Excellence</h3>
+            <p>Secured a perfect 4.0/4.0 GPA in the first semester of the Bachelor's degree, highlighting a strong start in academic performance.</p>
+        </div>
+        <div class="card">
+            <h3>Best Final Year Project</h3>
+            <p>University of Gujrat</p>
+            <p>Recognized as the top project in the Software Engineering department.</p>
+        </div>
+        <div class="card">
+            <h3>Semester Exchange Scholar</h3>
+            <p>University of Southern Indiana</p>
+            <p>First student from Sialkot selected under the Global UGRAD initiative.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer id= "footer" class="footer">
+        <p>Connect with me: 
+            <a href="mailto:komalashraf.ka@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/komalashraf-ka"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/komalashraf-ka"><i class="fab fa-github"></i></a>
+        </p>
+    </footer>
+
+</body>
+</html>
